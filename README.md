@@ -5,76 +5,76 @@ This project aims to classify individuals as diabetic or non-diabetic using the 
 
 ## Dataset
 
-##### Source: CDC Diabetes Health Indicators Dataset
+> Source: CDC Diabetes Health Indicators Dataset
 
-Target Variable: Diabetes_binary (0 = Non-Diabetic, 1 = Diabetic)
+> Target Variable: Diabetes_binary (0 = Non-Diabetic, 1 = Diabetic)
 
-Features: 20 health-related indicators
+> Features: 20 health-related indicators
 
-Original Class Distribution:
+> Original Class Distribution:
 
-Non-Diabetic (0): 218,334 instances
+  1. Non-Diabetic (0): 218,334 instances
 
-Diabetic (1): 35,346 instances
+  2. Diabetic (1): 35,346 instances
 
-Balanced Class Distribution (After undersampling):
+> Balanced Class Distribution (After undersampling):
 
-Non-Diabetic (0): 35,346 instances
+  1. Non-Diabetic (0): 35,346 instances
 
-Diabetic (1): 35,346 instances
+  2. Diabetic (1): 35,346 instances
 
 ## Implementation Steps
 
-Load the dataset: Read the CSV file into a Pandas DataFrame.
+1) Load the dataset: Read the CSV file into a Pandas DataFrame.
 
-Define features and target: Extract feature variables (X) and the target column (Diabetes_binary).
+2) Define features and target: Extract feature variables (X) and the target column (Diabetes_binary).
 
-Handle class imbalance: Apply Random Undersampling to equalize both classes.
+3)Handle class imbalance: Apply Random Undersampling to equalize both classes.
 
-Split dataset: Use an 80-20 train-test split.
+4) Split dataset: Use an 80-20 train-test split.
 
-Train a Logistic Regression model: Fit the model on the training data.
+5) Train a Logistic Regression model: Fit the model on the training data.
 
-Evaluate performance:
+6) Evaluate performance:
 
-Accuracy score
+   > Accuracy score
 
-Classification report (Precision, Recall, F1-score)
+   > Classification report (Precision, Recall, F1-score)
 
-Confusion matrix visualization
+   > Confusion matrix visualization
 
 ## Results
 
-Accuracy: Approximately 74%
+> Accuracy: Approximately 74%
 
-Confusion Matrix:
+> Confusion Matrix:
 
-Displays true positives, true negatives, false positives, and false negatives.
+  . Displays true positives, true negatives, false positives, and false negatives.
 
-Helps in understanding model performance on diabetic vs. non-diabetic predictions.
+  . Helps in understanding model performance on diabetic vs. non-diabetic predictions.
 
 ## Dependencies
 
-Python
+. Python
 
-pandas
+. pandas
 
-numpy
+. numpy
 
-scikit-learn
+. scikit-learn
 
-imbalanced-learn
+. imbalanced-learn
 
-matplotlib
+. matplotlib
 
-seaborn
+. seaborn
 
-Future Improvements
+## Future Improvements
 
-Experiment with feature engineering to improve predictive performance.
+1) Experiment with feature engineering to improve predictive performance.
 
-Try different sampling techniques such as SMOTE (Synthetic Minority Over-sampling Technique).
+2) Try different sampling techniques such as SMOTE (Synthetic Minority Over-sampling Technique).
 
-Use hyperparameter tuning for better model performance.
+3) Use hyperparameter tuning for better model performance.
 
-Implement other classifiers like Random Forest, SVM, or Neural Networks for comparison.
+4) Implement other classifiers like Random Forest, SVM, or Neural Networks for comparison.
