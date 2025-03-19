@@ -3,9 +3,9 @@
 
 This project aims to classify individuals as diabetic or non-diabetic using the Diabetes Health Indicators Dataset. The dataset was originally imbalanced, so we applied Random Undersampling to balance the class distribution. A Logistic Regression model was then trained on the balanced dataset.
 
-Dataset
+## Dataset
 
-Source: CDC Diabetes Health Indicators Dataset
+##### Source: CDC Diabetes Health Indicators Dataset
 
 Target Variable: Diabetes_binary (0 = Non-Diabetic, 1 = Diabetic)
 
@@ -23,7 +23,7 @@ Non-Diabetic (0): 35,346 instances
 
 Diabetic (1): 35,346 instances
 
-Implementation Steps
+## Implementation Steps
 
 Load the dataset: Read the CSV file into a Pandas DataFrame.
 
@@ -43,7 +43,7 @@ Classification report (Precision, Recall, F1-score)
 
 Confusion matrix visualization
 
-Results
+## Results
 
 Accuracy: Approximately 74%
 
@@ -53,7 +53,7 @@ Displays true positives, true negatives, false positives, and false negatives.
 
 Helps in understanding model performance on diabetic vs. non-diabetic predictions.
 
-Dependencies
+## Dependencies
 
 Python
 
