@@ -1,5 +1,5 @@
 # Diabetic-Prediction
-##Project Overview
+## Project Overview
 
 This project aims to classify individuals as diabetic or non-diabetic using the Diabetes Health Indicators Dataset. The dataset was originally imbalanced, so we applied Random Undersampling to balance the class distribution. A Logistic Regression model was then trained on the balanced dataset.
 
