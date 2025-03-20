@@ -11,47 +11,56 @@ This project aims to classify individuals as diabetic or non-diabetic using the 
 
 > Features: 20 health-related indicators
 
-> Original Class Distribution:
+> Size: 253,680 instances
 
-  1. Non-Diabetic (0): 218,334 instances
+> Missing Values: None
 
-  2. Diabetic (1): 35,346 instances
+## Data Preprocessing
+1) Removed duplicates
 
-> Balanced Class Distribution (After undersampling):
+2) Converted categorical columns to categorical datatype
 
-  1. Non-Diabetic (0): 35,346 instances
+3) Encoded categorical features using integer encoding
 
-  2. Diabetic (1): 35,346 instances
+4) Standardized numeric features (BMI, MentHlth, PhysHlth)
 
-## Implementation Steps
+5) Addressed class imbalance using Random Under-Sampling
 
-1) Load the dataset: Read the CSV file into a Pandas DataFrame.
+## Models Implemented
 
-2) Define features and target: Extract feature variables (X) and the target column (Diabetes_binary).
+The following machine learning models were trained and evaluated:
 
-3)Handle class imbalance: Apply Random Undersampling to equalize both classes.
+1) Logistic Regression
 
-4) Split dataset: Use an 80-20 train-test split.
+2) Decision Tree Classifier
 
-5) Train a Logistic Regression model: Fit the model on the training data.
+3) Random Forest Classifier
 
-6) Evaluate performance:
+4) Gradient Boosting Classifier
 
-   > Accuracy score
+5) Support Vector Machine (SVM)
 
-   > Classification report (Precision, Recall, F1-score)
+6) K-Nearest Neighbors (KNN)
 
-   > Confusion matrix visualization
+## Model Evaluation
+
+The models were evaluated using the following metrics:
+
+1) Accuracy Score
+
+2) Classification Report (Precision, Recall, F1-Score)
+
+3) Confusion Matrix
+
+4) Model Comparison Chart (Accuracy Scores for all models)
 
 ## Results
 
-> Accuracy: Approximately 74%
+1) The best-performing model is determined based on accuracy.
 
-> Confusion Matrix:
+2) A bar chart visualizes the accuracy of all models.
 
-  . Displays true positives, true negatives, false positives, and false negatives.
-
-  . Helps in understanding model performance on diabetic vs. non-diabetic predictions.
+3) Sample predictions are displayed for comparison.
 
 ## Dependencies
 
@@ -69,12 +78,20 @@ This project aims to classify individuals as diabetic or non-diabetic using the 
 
 . seaborn
 
+## Installation & Execution
+
+. Install required dependencies:
+
+. Run the script
+
 ## Future Improvements
 
-1) Experiment with feature engineering to improve predictive performance.
+1) Feature selection to remove less important variables.
 
-2) Try different sampling techniques such as SMOTE (Synthetic Minority Over-sampling Technique).
+2) Use SMOTE for synthetic minority oversampling.
 
-3) Use hyperparameter tuning for better model performance.
+3) Implement deep learning models (Neural Networks).
 
-4) Implement other classifiers like Random Forest, SVM, or Neural Networks for comparison.
+4) Hyperparameter tuning for improved accuracy.
+
+
